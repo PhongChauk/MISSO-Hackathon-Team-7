@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-green w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>EMAJJ</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-white" style="font-weight:bold">
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      New Arrivals <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button">T-Shirts</a>
+      <a href="#" class="w3-bar-item w3-button">Shoes</a>
+      <a href="#" class="w3-bar-item w3-button">Hats</a>
+      <a href="#" class="w3-bar-item w3-button">Hoodies</a>
+    </div>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-green w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">EMAJJ</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">New Apparel</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="https://www.treehugger.com/thmb/5CbUcpC93CJEqM8026kDM5-vLMU=/2063x1547/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2019__01__thrift_store-02868d158ff645e5a0672351f8454329.jpg " alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+     <div class="w3-padding-64 w3-large w3-text-white" style="font-weight:bold">
+      <h1 class="w3-jumbo w3-hide-small">New Clothing</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="w3-hide-small">COLLECTION 2021</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>14 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://i.pinimg.com/originals/a8/83/a6/a883a69f6bba107fe722104daf0bb54f.jpg" style="width:100%">
+        <p>Grey Pullover Hoodie<br><b>$8.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://m.media-amazon.com/images/I/61mSyjeYXWL._AC_UL1001_.jpg" style="width:100%">
+      <span class="w3-tag w3-display-topleft">Sale</span>
+        <p>Orange T-Shirt<br><b>$3.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://images.dsw.com/is/image/DSWShoes/460643_002_ss_01?$colpg$ " style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+        <p>Nike Shoes<br><b>$19.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://www.ikea.com/us/en/images/products/knorva-hat-blue__0812162_pe771942_s5.jpg" style="width:100%">
+        <p>IKEA Hat<br><b>$5.99</b></p>
+      </div>
+    </div>
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71ElLga-12L._AC_UL1500_.jpg " style="width:100%">
+        <p>High Waist Skirt<br><b>$5.99</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://www.makeyourownjeans.com/images/chinos/finetwillkhakiwashlook.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+        <p>Khaki Pants<br><b class="w3-text-red">$8.99</p>
+      </div>
+    </div>
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://cdn.shopify.com/s/files/1/0052/7237/1293/products/1024x1024-Socks-White-LB1_1024x1024.jpg?v=1561393817 " style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+        <p>Socks<br><b>$3.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://images.sportsdirect.com/images/products/60611703_l.jpg" style="width:100%">
+        <p>Black Jacket<br><b>$10.99</b></p>
+      </div>
+    </div>
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://media.gq-magazine.co.uk/photos/5f3a8deeffe32218efca5004/master/w_1000,c_limit/20200817-jeans-04.jpg " style="width:100%">
+        <p>Basic Jeans<br><b>$8.99</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://cdn.shopify.com/s/files/1/1937/2885/products/ZANZEA-Women-Blouses-Shirts-2018-Autumn-Elegant-Ladies-O-Neck-Flounce-Long-Sleeve-Solid-Blusas-Casual.jpg_640x640_b66be4b3-d2bd-4d8f-83b2-1d6f27b94289_1024x1024.jpg?v=1571790853 " style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+        <p>Blue Women Blouse<br><b class="w3-text-red">$5.99</b></p>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://m.media-amazon.com/images/I/7191bMfBpEL._AC_UL1500_.jpg " style="width:100%">
+        <p>Black Suit Jacket<br><b>$10.99</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://cdn.shopify.com/s/files/1/1722/0531/products/women_s_pocket-side-t-logo-t-shirt_white_1024x1024.jpg?v=1571439062 " style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+        <p>Women's T-Shirt<br><b class="w3-text-red">$4.99</b></p>
+      </div>
+    </div>
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F68%2F86%2F6886cc2d3145a796e829853d8576ad52e04bad02.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_trousers_joggers%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" style="width:100%">
+        <p>Grey Sweatpants<br><b>$6.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1611783922-most-cmofrtable-high-heels0grand-ambition-pump-1611783847.png" style="width:100%">
+        <p>Blue High Heel Shoes<br><b>$7.99</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-green w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead and ask!</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-green">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> EMAJJ</p>
+        <p><i class="fa fa-fw fa-phone"></i> 7334777321</p>
+        <p><i class="fa fa-fw fa-envelope"></i> EMAJJ@gmail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> VISA</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> AMEX</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-green w3-center w3-padding-24">Powered by ComCast <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">EMAHJJ.com</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
